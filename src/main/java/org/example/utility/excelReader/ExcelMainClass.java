@@ -1,11 +1,13 @@
-import org.example.utility.ReadUsers;
+package org.example.utility.excelReader;
+
+import org.example.utility.excelReader.ReadUsers;
 
 public class ExcelMainClass {
     public static void main(String[] args){
         String filePath = "src/main/resources/UserData.xlsx";
         ReadUsers readExcel = new ReadUsers();
 
-        readExcel.usingExistingWorkbook(filePath);
-        readExcel.readFullExcelFile(0);
+//        readExcel.usingExistingWorkbook(filePath);
+//        readExcel.readFullExcelFile(0);
     }
 }
