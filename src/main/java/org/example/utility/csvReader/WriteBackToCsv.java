@@ -7,7 +7,6 @@ import java.io.*;
 public class WriteBackToCsv {
     CsvReadData csvReadData = new CsvReadData();
     public void writeBack(){
-        String data = "Hello this is the first line output";
         try{
             File file = new File("src/main/resources/UserDataCSV - Copy.csv");
             FileWriter fileWriter = new FileWriter(file);
