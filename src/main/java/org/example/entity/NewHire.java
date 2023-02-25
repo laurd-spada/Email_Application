@@ -86,7 +86,7 @@ public class NewHire {
     }
 
     public void setMailSize(int mailSize) {
-        this.mailSize = mailSize;
+        this.mailCapacity = new int[mailSize];
     }
 
     @Override
@@ -100,7 +100,6 @@ public class NewHire {
                 ", email='" + email + '\'' +
                 ", altEmail='" + altEmail + '\'' +
                 ", mailCapacity=" + Arrays.toString(mailCapacity) +
-                ", mailSize=" + mailSize +
                 '}';
     }
 }

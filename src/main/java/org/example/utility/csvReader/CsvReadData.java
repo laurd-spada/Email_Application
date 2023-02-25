@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CsvReadData {
-    private List<NewHire> newHireList = new ArrayList<>();
+    private static List<NewHire> newHireList = new ArrayList<>();
     public void readCsv() {
         String line = "";
         try {
@@ -21,7 +21,6 @@ public class CsvReadData {
             while ((line = bufferedReader.readLine()) != null){
                 String[] data =line.split(",");
                 NewHire newHire = createUser(data);
-                System.out.println(newHire.toString());
                 newHireList.add(newHire);
             }
             fileReader.close();  //closes the stream and release the resources
@@ -40,5 +39,13 @@ public class CsvReadData {
         String altEmail = data[6];
         int mailSize = Integer.parseInt(data[7]);
         return new NewHire(id, firstName, lastName, age, passWord, email, altEmail, mailSize);
+    }
+    public List<NewHire> getNewHireList(){
+        return newHireList;
+    }
+    public void showNewHireList(){
+        for(NewHire i : newHireList){
+            System.out.println(i.toString());
+        }
     }
 }
