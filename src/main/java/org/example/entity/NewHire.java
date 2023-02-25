@@ -85,21 +85,24 @@ public class NewHire {
         return mailSize;
     }
 
+    public int getMailCapacity() {
+        return mailCapacity.length;
+    }
+
     public void setMailSize(int mailSize) {
         this.mailCapacity = new int[mailSize];
     }
 
     @Override
     public String toString() {
-        return "NewHire{" +
-                "id=" + id +
-                ", firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", age=" + age +
-                ", pWord='" + pWord + '\'' +
-                ", email='" + email + '\'' +
-                ", altEmail='" + altEmail + '\'' +
-                ", mailCapacity=" + Arrays.toString(mailCapacity) +
-                '}';
+        return
+                "" + id +
+                ", " + firstName  +
+                ", " + lastName  +
+                ", " + age +
+                ", " + pWord +
+                ", " + email +
+                ", " + altEmail +
+                ", " + mailCapacity.length;
     }
 }

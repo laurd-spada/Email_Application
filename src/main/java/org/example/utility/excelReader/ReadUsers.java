@@ -41,8 +41,6 @@ public class ReadUsers {
                 int mailSize = (int)sheet.getRow(i).getCell(7).getNumericCellValue();
 
                 test.add(new NewHire(id, firstname,lastname, age, pWord, email, altEmail, mailSize));
-                NewHire newHire = new NewHire(id, firstname,lastname, age, pWord, email, altEmail, mailSize);
-                System.out.println(newHire.toString());
             }
             file.close();
         } catch (Exception e){

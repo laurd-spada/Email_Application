@@ -7,5 +7,4 @@ public interface UserInterface {
     public void setAllMailBoxSize(int size);
     public void setSingleMailBoxSize(int id, int size);
     public void viewUser(int id);
-    public void test();
 }

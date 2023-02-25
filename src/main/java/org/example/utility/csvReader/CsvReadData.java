@@ -17,10 +17,10 @@ public class CsvReadData {
             FileReader fileReader = new FileReader(file);    //reads the file
 
             BufferedReader bufferedReader = new BufferedReader(fileReader); //creates a buffering character input stream
-            bufferedReader.readLine(); // this will read the first line
+            bufferedReader.readLine(); // this will read the first line without storing the value
             while ((line = bufferedReader.readLine()) != null){
-                String[] data =line.split(",");
-                NewHire newHire = createUser(data);
+                String[] data =line.split(","); // Split the values of each line
+                NewHire newHire = createUser(data); // Read the value of each split line to convert the data type to create an object
                 newHireList.add(newHire);
             }
             fileReader.close();  //closes the stream and release the resources
