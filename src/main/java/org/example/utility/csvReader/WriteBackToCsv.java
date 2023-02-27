@@ -12,7 +12,7 @@ public class WriteBackToCsv {
             File file = new File("src/main/resources/UserDataCSV - Copy.csv");
             FileWriter fileWriter = new FileWriter(file);
             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
-            bufferedWriter.write("id, firstname, lastname, age, password, email, altpassword, mailboxSize \n");
+            bufferedWriter.write("Id, Firstname, Lastname, Age, Password, Email, alt-Password, MailboxSize \n");
             for(NewHire i : csvReadData.getNewHireList()){
                 bufferedWriter.write(i + "\n");
                 System.out.println("returned succesful");

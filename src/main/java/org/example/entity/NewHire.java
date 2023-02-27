@@ -1,7 +1,4 @@
 package org.example.entity;
-
-import java.util.Arrays;
-
 public class NewHire {
     private int id;
     private String firstName;

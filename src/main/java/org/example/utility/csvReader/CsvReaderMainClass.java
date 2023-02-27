@@ -16,7 +16,7 @@ public class CsvReaderMainClass {
         userInterfaceImp.setSingleMailBoxSize(2,7);
         userInterfaceImp.viewUser(2);
 
-//        writeBackToCsv.writeBack();
+        writeBackToCsv.writeBack();
 
 //        csvReadData.showNewHireList();
 

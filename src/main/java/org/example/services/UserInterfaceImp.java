@@ -5,7 +5,6 @@ import org.example.interfaces.UserInterface;
 import org.example.utility.csvReader.CsvReadData;
 
 public class UserInterfaceImp extends CsvReadData implements UserInterface{
-//    CsvReadData csvReadData = new CsvReadData();
     @Override
     public void createEmail() {
         for(NewHire i : getNewHireList()){
