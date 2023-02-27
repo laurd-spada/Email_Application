@@ -16,10 +16,10 @@ public class UserInterfaceImp extends CsvReadData implements UserInterface{
         String alphabets = "abcdefghijklmnopqrstuvwxyz";
         String number = "123456789";
         String total = alphabets + number;
-        String[] split = total.split("");
+        String[] splitCharacter = total.split("");
         String[] passWord = new String[5];
         for (int i = 0; i < 5; i++){
-            passWord[i] = split[(int)(Math.random() * split.length)];
+            passWord[i] = splitCharacter[(int)(Math.random() * splitCharacter.length)];
         }
         String result = String.join("",passWord);
         return result;
@@ -49,10 +49,12 @@ public class UserInterfaceImp extends CsvReadData implements UserInterface{
     public void viewUser(int id) {
         for(NewHire i : getNewHireList()){
             if(i.getId() == id){
+                System.out.println("------------------------------------");
                 System.out.println("I.D : " + i.getId());
                 System.out.println("Name : " + i.getFirstName() + " " + i.getLastName());
                 System.out.println("Email : " + i.getEmail());
                 System.out.println("Mailbox Capacity: " + i.getMailCapacity());
+                System.out.println("------------------------------------");
             }
         }
     }
